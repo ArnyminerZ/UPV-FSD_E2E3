@@ -1,0 +1,65 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Rcars",
+					"strict" : false
+				},
+				{
+					"name" : "Gcars",
+					"strict" : false
+				},
+				{
+					"name" : "Rpedes",
+					"strict" : false
+				},
+				{
+					"name" : "Gpedes",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "CLK_ENA",
+					"strict" : false
+				},
+				{
+					"name" : "SEM_P[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SEM_LOADn",
+					"strict" : false
+				},
+				{
+					"name" : "RSTn",
+					"strict" : false
+				},
+				{
+					"name" : "SEM_P[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SEM_P[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SEM_P[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SEM_P[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SEM_P[4]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

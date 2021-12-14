@@ -1,0 +1,26 @@
+module sem_clocks(CLK_50, CLK_50_ENA, CLK_50_RSTn, CLK_50_LOADn);
+   input CLK_50, CLK_50_ENA, CLK_50_RSTn, CLK_50_LOADn;
+	
+	// Cable interno para conectar el contador del reloj de 50MHz,
+	// y usarlo como uno de 4Hz.
+	wire CLK_4;
+
+	// Instanciamos el contador para transformar el reloj de 50MHz
+	// en uno de 4Hz.
+	binary_counter_tc #(
+	    // 50MHz/4=0.25 segundos=4Hz
+	    .MODULE(12500000),
+		 // Ya que tenemos que contar hasta 50M
+		 .WIDTH(24)
+	  )
+	  contador_reloj(
+	    .CLK(CLK_50),
+		 .CLK_ENA(CLK_50_ENA),
+		 .RSTn(CLK_50_RSTn),
+		 .Q(), /* no conectado */
+		 .LOADn(CLK_50_LOADn),
+		 .P(), /* no conectado */
+		 .TC(CLK_4)
+	  );
+
+endmodule

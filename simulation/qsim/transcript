@@ -1,0 +1,39 @@
+# do MoraGras_VillenaJimenez_FSD_E2E3.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:57 on Dec 13,2021
+# vlog -work work MoraGras_VillenaJimenez_FSD_E2E3.vo 
+# -- Compiling module sem_compara
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	sem_compara
+# End time: 19:38:57 on Dec 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:57 on Dec 13,2021
+# vlog -work work sem_compara.vwf.vt 
+# -- Compiling module sem_compara_vlg_vec_tst
+# 
+# Top level modules:
+# 	sem_compara_vlg_vec_tst
+# End time: 19:38:57 on Dec 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.sem_compara_vlg_vec_tst 
+# Start time: 19:38:57 on Dec 13,2021
+# Loading work.sem_compara_vlg_vec_tst
+# Loading work.sem_compara
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+# after#26
+# ** Note: $finish    : sem_compara.vwf.vt(62)
+#    Time: 1 us  Iteration: 0  Instance: /sem_compara_vlg_vec_tst
+# End time: 19:38:57 on Dec 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
